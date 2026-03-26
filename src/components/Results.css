@@ -1,0 +1,104 @@
+.results {
+  padding-top: 16px;
+}
+
+.results__title {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+/* Skoori kaart */
+.results__score {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.results__score-number {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.results__score-label {
+  font-size: 20px;
+  color: var(--color-gray-dark);
+}
+
+.results__message {
+  font-size: 16px;
+  color: var(--color-gray-dark);
+  margin-bottom: 36px;
+  max-width: 480px;
+}
+
+/* Tabel */
+.results__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.results__th {
+  text-align: left;
+  padding: 12px 12px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border-bottom: 2px solid var(--color-black);
+  color: var(--color-gray-dark);
+}
+
+.results__row {
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.results__td {
+  padding: 12px 12px;
+  vertical-align: top;
+}
+
+.results__td--num {
+  font-weight: 700;
+  width: 32px;
+}
+
+/* Tulemuse badge */
+.results__badge {
+  display: inline-block;
+  padding: 3px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.results__badge--correct {
+  background-color: var(--color-success);
+  color: var(--color-white);
+}
+
+.results__badge--wrong {
+  background-color: var(--color-error);
+  color: var(--color-white);
+}
+
+/* Nupp */
+.results__restart {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  padding: 14px 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.results__restart:hover {
+  background-color: var(--color-gray-dark);
+}
