@@ -1,4 +1,4 @@
-# Eesti statistika viktoriiin
+# Eesti statistika viktoriin
 
 Viktoriinirakendus, mis testib sinu teadmisi Eesti statistika kohta. Tehud React + TypeScript + Vite stackiga.
 
@@ -28,7 +28,8 @@ Disain põhineb Statistikaameti CVI-l (https://brand.stat.ee). Kasutusel on Robo
 
 ## Stack
 
-- React 18
-- TypeScript
-- Vite
-- Playwright
+* React 18
+* TypeScript
+* Vite
+* Playwright
+

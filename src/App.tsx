@@ -58,7 +58,7 @@ function App() {
         >
           <Logo />
         </div>
-        <span className="header__title">Viktoriiin</span>
+        <span className="header__title">Viktoriin</span>
       </header>
 
       <main className="main">
