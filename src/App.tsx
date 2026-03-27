@@ -51,7 +51,11 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <div className="header__logo">
+        <div
+          className="header__logo"
+          onClick={handleRestart}
+          style={{ cursor: "pointer" }}
+        >
           <Logo />
         </div>
         <span className="header__title">Viktoriiin</span>

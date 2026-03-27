@@ -21,9 +21,62 @@
   line-height: 1;
 }
 
-.results__score-label {
-  font-size: 20px;
-  color: var(--color-gray-dark);
+
+
+/* Skoori ring */
+.results__score-ring {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 12px;
+}
+
+.results__score-ring svg {
+  transform: rotate(-90deg);
+}
+
+.results__ring-bg {
+  fill: none;
+  stroke: var(--color-gray-light);
+  stroke-width: 8;
+}
+
+.results__ring-fill {
+  fill: none;
+  stroke: var(--color-success);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease;
+}
+
+.results__ring-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* Tulemuste palk */
+.results__bar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 28px;
+}
+
+.results__bar-item {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.results__bar-item--correct {
+  background-color: var(--color-success);
+}
+
+.results__bar-item--wrong {
+  background-color: var(--color-error);
 }
 
 .results__message {
@@ -101,4 +154,5 @@
 
 .results__restart:hover {
   background-color: var(--color-gray-dark);
+  transform: translateY(-2px);
 }

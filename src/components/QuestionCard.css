@@ -56,11 +56,13 @@
   font-size: 16px;
   text-align: left;
   cursor: pointer;
-  transition: border-color 0.15s, background-color 0.15s;
+  transition: border-color 0.15s, background-color 0.15s, transform 0.15s, box-shadow 0.15s;
 }
 
 .question-card__option:hover:not(:disabled) {
   border-color: var(--color-black);
+  transform: translateX(6px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .question-card__option-letter {
@@ -74,6 +76,12 @@
   font-size: 14px;
   text-transform: uppercase;
   border: 2px solid var(--color-black);
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.question-card__option:hover:not(:disabled) .question-card__option-letter {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .question-card__option--selected {
@@ -139,4 +147,5 @@
 
 .question-card__next:hover {
   background-color: var(--color-gray-dark);
+  transform: translateY(-2px);
 }

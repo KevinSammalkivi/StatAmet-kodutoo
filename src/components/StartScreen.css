@@ -47,4 +47,5 @@
 
 .start__button:hover {
   background-color: var(--color-gray-dark);
+  transform: translateY(-2px);
 }

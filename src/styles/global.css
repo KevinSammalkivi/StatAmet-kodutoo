@@ -36,3 +36,9 @@ h2,
 h3 {
   font-weight: 700;
 }
+
+/* Punktiirmuster taust  */
+.app {
+  background-image: radial-gradient(circle, #00000008 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+}
